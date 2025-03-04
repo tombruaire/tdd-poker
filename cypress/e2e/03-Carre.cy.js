@@ -1,5 +1,5 @@
 describe("POKER", () => {
-    it("Test - Quinte Flush", () => {
+    it("Test - Carré", () => {
         cy.visit('/');
         cy.wait(1000);
         cy.get('select#main_carte1').select('7Cœur');
