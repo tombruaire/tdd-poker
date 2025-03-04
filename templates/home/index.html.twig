@@ -31,10 +31,18 @@
                     </div>
                     <div class="row d-flex justify-content-center">
                         <div class="col-auto">
-                            <button type="button" id="btnJouer" class="btn btn-primary">Jouer</button>
+                            <button type="submit" id="btnJouer" class="btn btn-primary">Jouer</button>
                         </div>
                     </div>
                 </div>
+                {% for message in app.flashes('success') %}
+                    <div class="card-footer">
+                        <div class="alert alert-success mb-0">
+                            <span class="mb-0">{{ message }}</span>
+                        </div>
+                    </div>
+                {% endfor %}
+                
                 {{ form_end(form) }}
             </div>
         </div>
