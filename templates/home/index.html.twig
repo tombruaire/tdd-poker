@@ -5,27 +5,29 @@
 {% block body %}
 <div class="container mt-4">
     <div class="row d-flex justify-content-center">
-        <div class="col-md-3">
+        <div class="col-auto">
             <div class="card">
                 <div class="card-header">
-                    <h3>Main du joueur</h3>
+                    <h3 class="text-center">Main du joueur</h3>
                 </div>
                 {{ form_start(form) }}
                 <div class="card-body">
-                    <div class="mb-3">
-                        {{ form_row(form.carte1) }}
-                    </div>
-                    <div class="mb-3">
-                        {{ form_row(form.carte2) }}
-                    </div>
-                    <div class="mb-3">
-                        {{ form_row(form.carte3) }}
-                    </div>
-                    <div class="mb-3">
-                        {{ form_row(form.carte4) }}
-                    </div>
-                    <div class="mb-5">
-                        {{ form_row(form.carte5) }}
+                    <div class="row d-flex justify-content-center mb-5">
+                        <div class="col-2">
+                            {{ form_row(form.carte1) }}
+                        </div>
+                        <div class="col-2">
+                            {{ form_row(form.carte2) }}
+                        </div>
+                        <div class="col-2">
+                            {{ form_row(form.carte3) }}
+                        </div>
+                        <div class="col-2">
+                            {{ form_row(form.carte4) }}
+                        </div>
+                        <div class="col-2">
+                            {{ form_row(form.carte5) }}
+                        </div>
                     </div>
                     <div class="row d-flex justify-content-center">
                         <div class="col-auto">
